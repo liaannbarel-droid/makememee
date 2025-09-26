@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:makememee.ViewModels"
+             xmlns:m="clr-namespace:makememee.Models" 
+             x:DataType="vm:LogInVM"
+             x:Class="makememee.Views.LogInPage"
+             Title="LogInPage">
+    
+    <VerticalStackLayout>
+        <Label 
+            Text="Log in to Make It Meme!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry Placeholder="{x:Static m:Strings.Name}" Text="{Binding Name}" />
+        <Entry Placeholder="{x:Static m:Strings.Email}" Text="{Binding Email}" />
+        <Entry Placeholder="{x:Static m:Strings.Password}" Text="{Binding Password}" />
+        <Button Text="{x:Static m:Strings.LogInButton}" Command="{Binding LogInCommand}" />
+    </VerticalStackLayout>
+    
+</ContentPage>

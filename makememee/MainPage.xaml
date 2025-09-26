@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:makememee.ViewModels"
+             xmlns:m="clr-namespace:makememee.Models" 
+             x:Class="makememee.MainPage"
+             x:DataType="vm:MainPageVM">
+
+
+    <VerticalStackLayout Spacing="25" Margin="10">
+        <Entry Placeholder="{x:Static m:Strings.Name}" Text="{Binding Name}" />
+        <Button Text="{x:Static m:Strings.RegisterButton}" Command="{Binding RegisterCommand}" />
+    </VerticalStackLayout>
+    
+</ContentPage>
