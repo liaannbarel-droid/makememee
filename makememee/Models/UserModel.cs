@@ -1,7 +1,10 @@
-﻿namespace makememee.Models
+﻿using makememee.ModelLogic;
+
+namespace makememee.Models
 {
     internal abstract class UserModel
     {
+        protected FbData fbd = new();
         public bool IsRegister=>!string.IsNullOrWhiteSpace(Name);
         public string Name { get; set; }=string.Empty;
         public string Password { get; set; }=string.Empty;

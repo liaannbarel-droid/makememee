@@ -17,9 +17,6 @@ namespace makememee.ViewModels
                (RegisterCommand as Command)?.ChangeCanExecute();                
             } 
         }
-
-       
-
         public MainPageVM()
         {
             RegisterCommand = new Command(Registeri, CanRegister);
@@ -28,7 +25,6 @@ namespace makememee.ViewModels
         {
             return !string.IsNullOrWhiteSpace(user.Name) && !string.IsNullOrWhiteSpace(user.Name);
         }
-
         private void Registeri()
         {
             user.Register();

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "44265348955",
+    "project_id": "makeitmeme-23c20",
+    "storage_bucket": "makeitmeme-23c20.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44265348955:android:f175e83c7cb50630a5847e",
+        "android_client_info": {
+          "package_name": "com.meitar.makememee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxIGTfBbI6_ottVR59VG3n1vpVI6B1IB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
